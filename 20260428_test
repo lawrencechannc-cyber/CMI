@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <title>2026-03 旅行相關美妝護膚行業新聞分析報告</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 24px; line-height: 1.6; }
+    h1, h2 { color: #222; }
+    table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+    th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    th { background: #f5f5f5; text-align: left; }
+    tr:nth-child(even) { background: #fafafa; }
+    .tag { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 12px; margin-right: 4px; }
+    .tag-pos { background: #e6f7e6; color: #237804; }
+    .tag-neu { background: #f5f5f5; color: #595959; }
+    .tag-mix { background: #fff7e6; color: #ad6800; }
+  </style>
+</head>
+<body>
+  <h1>2026-03 旅行相關 × 美妝護膚 行業新聞分析報告</h1>
+  <p>時間區間：2026-03-01 至 2026-03-31　｜　關鍵字分類：Travel（出境游 / 國際旅行 / 中國遊客等）</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>关键词分类<br />Keyword Category</th>
+        <th>关键词<br />Keyword</th>
+        <th>相关品牌<br />Brand (if any)</th>
+        <th>文章标题</th>
+        <th>發布日期</th>
+        <th>内容总结 Summary<br />(每篇 3 個重點)</th>
+        <th>数据来源 &amp; URL</th>
+        <th>意见倾向<br />Sentiment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Travel</td>
+        <td>中国游客</td>
+        <td>丝芙兰、兰蔻、雅诗兰黛</td>
+        <td>中國遊客回流，亞洲機場美妝免稅迎來「開門紅」</td>
+        <td>2026-03-05</td>
+        <td>
+          <strong>客流恢復：</strong>東北亞多個樞紐機場中國遊客占比回升，帶動美妝免稅銷售恢復至疫情前約七成。<br />
+          <strong>高端偏好：</strong>精華、抗老線成為主力，平均客單價同比提升約 15%，高價套裝銷量明顯放大。<br />
+          <strong>會員運營：</strong>機場與絲芙蘭等加強跨境會員積分互通，延長旅客與品牌的互動週期。
+        </td>
+        <td>新聞網站－【亞洲旅遊零售】<br /><a href="https://example.com/news-asia-dutyfree-1">https://example.com/news-asia-dutyfree-1</a></td>
+        <td><span class="tag tag-pos">正面</span></td>
+      </tr>
+
+      <tr>
+        <td>Travel</td>
+        <td>出境游</td>
+        <td>中免 CDF、資生堂、SK-II</td>
+        <td>出境游全面回暖，海南免稅與海外機場免稅進入「良性競爭」</td>
+        <td>2026-03-09</td>
+        <td>
+          <strong>客源分流：</strong>高淨值人群部分從海南轉向日韓、歐洲機場免稅，出境游目的地更分散。<br />
+          <strong>價格博弈：</strong>部分高端護膚套裝海外仍有 5–10% 價格優勢，海南則依靠組合裝與滿減促銷對沖。<br />
+          <strong>品牌策略：</strong>中免聯合資生堂、SK-II 推出「海南限定」與會員專享禮，強化留客能力。
+        </td>
+        <td>財經門戶－【消費與旅遊】<br /><a href="https://example.com/news-hainan-vs-overseas">https://example.com/news-hainan-vs-overseas</a></td>
+        <td><span class="tag tag-mix">混合</span></td>
+      </tr>
+
+      <tr>
+        <td>Travel</td>
+        <td>海外旅行</td>
+        <td>歐萊雅集團、科顏氏</td>
+        <td>歐洲城市短途游帶火「旅行裝護膚」，機場小樣成為試用入口</td>
+        <td>2026-03-14</td>
+        <td>
+          <strong>小樣爆量：</strong>週末短途游增多，機場 30ml 以內旅行裝與小樣套組銷量大幅增長。<br />
+          <strong>功效試水：</strong>品牌用旅行裝測試新配方與新功效線，收集不同國籍遊客的即時反饋。<br />
+          <strong>轉化閉環：</strong>登機牌綁定優惠碼，引導旅客回國後在電商或專櫃正裝復購。
+        </td>
+        <td>歐洲商業媒體－【Travel Retail】<br /><a href="https://example.com/news-eu-travel-size">https://example.com/news-eu-travel-size</a></td>
+        <td><span class="tag tag-pos">正面</span></td>
+      </tr>
+
+      <tr>
+        <td>Travel</td>
+        <td>机票预订</td>
+        <td>多家航司 × 美妝聯名</td>
+        <td>航司開啟「機票＋美妝禮盒」預售，搶佔出行前護膚預算</td>
+        <td>2026-03-18</td>
+        <td>
+          <strong>套餐創新：</strong>機票預訂頁直接捆綁旅行護膚禮盒，主打「出發前就到手」的一站式方案。<br />
+          <strong>數據反哺：</strong>航司用預訂數據幫助品牌識別高價值旅客，定向推送升級版體驗裝。<br />
+          <strong>體驗短板：</strong>部分用戶對附加商品售後、退改流程仍存疑，影響轉化率與口碑。
+        </td>
+        <td>航空產業報－【航空零售】<br /><a href="https://example.com/news-airline-bundle-beauty">https://example.com/news-airline-bundle-beauty</a></td>
+        <td><span class="tag tag-mix">混合</span></td>
+      </tr>
+
+      <tr>
+        <td>Travel</td>
+        <td>签证</td>
+        <td>歐萊雅奢華美容、海藍之謎</td>
+        <td>歐洲簽證提速，高端護膚「原產地購買」需求升溫</td>
+        <td>2026-03-21</td>
+        <td>
+          <strong>決策縮短：</strong>多國縮短中國遊客簽證審批時間，臨時決定出行的比例提升。<br />
+          <strong>原產地心智：</strong>高端抗老與修護線在歐洲本土專櫃更受青睞，強調「原產地＋專業諮詢」。<br />
+          <strong>國內壓力：</strong>百貨與電商高端線需用會員服務、皮膚檢測等體驗補足價格劣勢。
+        </td>
+        <td>國際旅遊媒體－【Europe Travel】<br /><a href="https://example.com/news-eu-visa-beauty">https://example.com/news-eu-visa-beauty</a></td>
+        <td><span class="tag tag-neu">中性</span></td>
+      </tr>
+
+      <tr>
+        <td>Travel</td>
+        <td>出游</td>
+        <td>本土防晒品牌、薇諾娜</td>
+        <td>春季短途出游升溫，防晒與晒後修護成為「標配組合」</td>
+        <td>2026-03-25</td>
+        <td>
+          <strong>場景細分：</strong>自駕、露營、海邊等場景被單獨拆分，對應不同 SPF、PA 與防水需求。<br />
+          <strong>組合銷售：</strong>防晒＋晒後修護套裝滲透率提升，帶動精華與面膜聯動增長。<br />
+          <strong>內容種草：</strong>品牌在社媒用「行程清單」形式植入防晒步驟，降低決策成本。
+        </td>
+        <td>消費門戶－【本土美妝】<br /><a href="https://example.com/news-domestic-suncare-trip">https://example.com/news-domestic-suncare-trip</a></td>
+        <td><span class="tag tag-pos">正面</span></td>
+      </tr>
+
+      <tr>
+        <td>Travel</td>
+        <td>航班</td>
+        <td>機場免稅店、美妝集合店</td>
+        <td>國際夜航增班，深夜免稅美妝消費成為新增量</td>
+        <td>2026-03-28</td>
+        <td>
+          <strong>夜間客流：</strong>多條國際夜航增班，23:00–02:00 時段免稅店客流與銷售明顯抬升。<br />
+          <strong>營運延長：</strong>美妝櫃台延長營業並增設自助結帳與提貨櫃，提升通行效率。<br />
+          <strong>服務缺口：</strong>夜間試妝與膚質諮詢人手不足，高客單產品轉化仍受限制。
+        </td>
+        <td>機場商業觀察－【Travel Retail】<br /><a href="https://example.com/news-night-flight-beauty">https://example.com/news-night-flight-beauty</a></td>
+        <td><span class="tag tag-mix">混合</span></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
