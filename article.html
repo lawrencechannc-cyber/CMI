@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="logo">CMI News Summary</div>
+  <nav class="nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../daily/index.html">Daily</a></li>
+      <li><a href="../weekly/index.html">Weekly</a></li>
+      <li><a href="../monthly/index.html">Monthly</a></li>
+      <li><a href="../archive.html">Archive</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container article">
+
+  <article>
+    <div class="article-header">
+      <div class="icon">{{ICON}}</div>
+      <h1 class="article-title">
+        <a href="{{SOURCE_URL}}" target="_blank">{{TITLE}}</a>
+      </h1>
+      <p class="article-date">{{DATE}}</p>
+    </div>
+
+    <section class="highlights">
+      <h2>重點摘要</h2>
+      <ul>
+        {{HIGHLIGHTS}}
+        <!-- 例如：
+        <li>政府宣布新一輪 AI 監管政策</li>
+        <li>科技股今日普遍上升</li>
+        -->
+      </ul>
+    </section>
+
+    <section class="content">
+      {{CONTENT_HTML}}
+      <!-- pipedream 轉換 markdown → HTML 放這裡 -->
+    </section>
+  </article>
+
+</main>
+
+<footer class="footer">
+  <p><a href="../about.html">About</a> · <a href="../archive.html">Archive</a> · <a href="../contact.html">Contact</a></p>
+</footer>
+
+</body>
+</html>
