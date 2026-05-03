@@ -1,4 +1,6 @@
-/* Base */
+/* ============================
+   Base
+============================ */
 body {
   margin: 0;
   font-family: "Inter", "Noto Sans TC", sans-serif;
@@ -21,20 +23,20 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
+/* ============================
+   Header（固定懸浮）
+============================ */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* 高於 side-nav */
-  background: #0A1E2F; /* 深海軍藍 */
+  z-index: 2000; /* 高於 side-nav */
+  background: #0A1E2F;
   color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
-/* 讓主內容往下移，避免被 header 蓋住 */
-main {
-  margin-top: 90px; /* 依你的 header 高度調整 */
-}
+
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -52,7 +54,9 @@ main {
   color: #ffffff;
 }
 
-/* Nav */
+/* ============================
+   Navigation
+============================ */
 .nav ul {
   list-style: none;
   margin: 0;
@@ -83,15 +87,13 @@ main {
   position: relative;
 }
 
-/* 主選項 */
 .dropdown > a {
   padding: 0.3rem 0.2rem;
   display: inline-block;
 }
 
-/* Dropdown menu — 預設一定要隱藏 */
 .dropdown-menu {
-  display: none !important;   /* 強制隱藏 */
+  display: none !important;
   position: absolute;
   top: 100%;
   left: 0;
@@ -100,16 +102,13 @@ main {
   padding: 0.5rem 0;
   list-style: none;
   min-width: 150px;
-  z-index: 20;
-  pointer-events: auto;
+  z-index: 3000;
 }
 
-/* Hover 時才顯示 */
 .dropdown:hover > .dropdown-menu {
-  display: block !important;  /* 強制顯示 */
+  display: block !important;
 }
 
-/* Dropdown item */
 .dropdown-menu li {
   padding: 0.3rem 1rem;
   white-space: nowrap;
@@ -124,14 +123,23 @@ main {
   background: #f2f2f2;
 }
 
-/* Layout */
+/* ============================
+   Layout
+============================ */
+main {
+  margin-top: 90px; /* 避開固定 header */
+}
+
 .container {
   max-width: 900px;
   margin: auto;
   padding: 2rem 1rem;
+  margin-left: 260px; /* 留出 side-nav 空間 */
 }
 
-/* Intro */
+/* ============================
+   Intro
+============================ */
 .intro {
   text-align: center;
   margin-bottom: 3rem;
@@ -146,17 +154,15 @@ main {
   color: #777;
 }
 
-/* Cards */
-.card-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
+/* ============================
+   Cards
+============================ */
 .card {
   background: white;
   padding: 1.5rem;
   border-radius: 6px;
   border: 1px solid #e0e0e0;
+  margin-bottom: 2rem;
   transition: box-shadow 0.2s ease;
 }
 
@@ -164,45 +170,23 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Article */
-.article-header {
-  margin-bottom: 2rem;
-}
-
-.article-title a {
-  color: #2A2A2A;
-}
-
-.article-date {
-  color: #777;
-  margin-top: 0.3rem;
-}
-
-.icon {
-  font-size: 2rem;
+.card-title {
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.highlights ul {
-  padding-left: 1.2rem;
+.source {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.content {
-  margin-top: 2rem;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem;
-  color: #666;
-
-
-
-
+/* ============================
+   Side Navigation（固定懸浮）
+============================ */
 .side-nav {
   position: fixed;
-  top: 120px;
+  top: 120px; /* 避開 header */
   left: 20px;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -211,7 +195,7 @@ main {
   padding: 16px 20px;
   width: auto;
   max-width: 220px;
-  z-index: 999; /* 讓索引永遠浮在最上層 */
+  z-index: 1500;
 }
 
 .side-nav ul {
@@ -241,8 +225,29 @@ main {
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* 主內容區留出空間 */
-.container {
-  margin-left: 260px;
+/* ============================
+   Footer
+============================ */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
 }
 
+/* ============================
+   Basic Mobile RWD
+============================ */
+@media (max-width: 900px) {
+  .container {
+    margin-left: 0; /* 移除 side-nav 空間 */
+  }
+
+  .side-nav {
+    display: none; /* 手機版隱藏側欄 */
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
