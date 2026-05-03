@@ -288,3 +288,48 @@ main {
   margin-bottom: 0.4rem;
   line-height: 1.5;
 }
+
+
+
+
+/* 整個分類區塊 */
+.category-block {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* 分類標題（深海軍藍） */
+.category-title {
+  background: #0A1E2F;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px 8px 0 0;
+  margin: 0;
+}
+
+/* 重點摘要區塊（接在分類標題下方） */
+.category-summary {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-top: none; /* 與分類標題無縫接合 */
+  padding: 1rem 1.2rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.summary-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #0A1E2F;
+}
+
+.category-summary ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.category-summary li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
