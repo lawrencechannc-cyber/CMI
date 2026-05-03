@@ -31,7 +31,10 @@ a:hover {
   background: #0A1E2F; /* 深海軍藍 */
   color: #ffffff;
 }
-
+/* 讓主內容往下移，避免被 header 蓋住 */
+main {
+  margin-top: 90px; /* 依你的 header 高度調整 */
+}
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
