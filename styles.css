@@ -336,4 +336,11 @@ main {
   line-height: 1.5;
   color: #ffffff; /* 白字 */
 }
+/* 取消分類標題與摘要框之間的空白 */
+.category-title {
+  margin-bottom: 0 !important;
+}
 
+.category-summary {
+  margin-top: 0 !important;
+}
