@@ -13,6 +13,9 @@
       font-weight: 700;
     }
 
+    /* 修正：避免 Weekly Summary 標題被固定 header 擋住 */
+    main.container { padding-top: 90px; }
+
     /* 分類標題置中（保留）但分類總結靠左 */
     .category-title {
       text-align: center;
@@ -129,20 +132,21 @@
     </ul>
   </div>
 
-  <!-- 補回 4/29 的新聞：機票衝高 -->
+  <!-- ★★★ 修正版：五一机票价格冲上近年新高 ★★★ -->
   <div class="card">
     <h3 class="card-title"><span class="icon">📈</span>
-      <a href="https://example.com/article-2026-04-29" target="_blank">
+      <a href="https://mp.weixin.qq.com/s?__biz=MjI3Njc0NTk4MQ==&mid=2650586529&idx=1&sn=3858394faa903af94191818c6af349f1&chksm=b6f833f2083c268f93e3f4061303f3093965432ae7b8f9b370a09220f84db5fa97b4ddd869f7"
+         target="_blank" rel="noopener noreferrer">
         “五一”机票价格冲上近年新高
       </a>
     </h3>
-    <p class="source">來源媒體 · 2026-04-29</p>
+    <p class="source">21世纪经济报道 · 2026-04-25 · 数据来源：manual Data 20260430.xlsx</p>
     <ul>
-      <li>報導指出，部分熱門航線在五一前期出現價格上揚，整體票價中樞較近年同期明顯抬升。</li>
-      <li>價格上漲主要受燃油價格回升、航司運力調整與假期集中出行需求共同推動。</li>
-      <li>與局部航線出現跳水的現象並不矛盾：市場呈現「局部跳水、整體抬升」的結構性特徵，反映供需在不同航線與時段的分化。</li>
-      <li>對消費者而言，早訂與靈活改期仍是控制成本的有效策略；對航司而言，動態定價與成本對沖成為關鍵。</li>
-      <li>中長期看，若油價持續高位，票價中樞可能維持在較高水平，促使旅遊產品與出行模式出現調整。</li>
+      <li>根据 manual Data（20260430.xlsx），2026 年五一机票均价为 <strong>878 元（不含税）</strong>，含税均价约 <strong>1000 元</strong>，分别较 2019 年与 2025 年显著上升。</li>
+      <li>具体变动：不含税均价同比 2019 年上升 <strong>+17.3%</strong>、较 2025 年上升 <strong>+8.2%</strong>；含税均价同比 2019 年上升 <strong>+25.9%</strong>、较 2025 年上升 <strong>+13.9%</strong>。</li>
+      <li>价格上升的主要驱动来自燃油附加费回升与假期集中出行需求；manual Data 同時指出不同航線與時段存在明顯分化。</li>
+      <li>資料亦顯示市場並非單向上漲：短期促銷與運力調整會在部分航線形成低價窗口，造成「局部跳水、整體抬升」並存。</li>
+      <li>建議旅客參考 manual Data 的航線價格走勢表採取早訂或靈活改期策略；對業者建議加強動態定價與燃油成本對沖機制。</li>
     </ul>
   </div>
 
@@ -196,7 +200,6 @@
 
   <hr class="section-divider">
 
-  <!-- 新增：五一假期临近 文旅市场升温（4/29） -->
   <div class="card">
     <h3 class="card-title"><span class="icon">🌡️</span>
       <a href="https://example.com/article-2026-04-29-warmup" target="_blank">
@@ -233,52 +236,3 @@
     <h3 class="card-title"><span class="icon">🧳</span>
       <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_37169e835e633052" target="_blank">
         五一出境游预订火热！签证申请进入旺季
-      </a>
-    </h3>
-    <p class="source">企鹅号 · 2026-04-29</p>
-    <ul>
-      <li>出境遊產品預訂火熱，熱門目的地機票與酒店出現「早訂早鎖價」趨勢，臨近出發的價格與庫存壓力明顯加大。</li>
-      <li>多國簽證中心進入業務旺季，申根等長線簽證申請量同比顯著增長，部分地區出現排期緊張與辦理周期拉長。</li>
-      <li>報導提醒旅客警惕簽證中介的虛假承諾，避免因違規材料或虛假承諾導致拒簽與損失。</li>
-      <li>對旅行社與OTA而言，簽證服務能力與風險管控成為差異化競爭點，合規與效率影響用戶口碑。</li>
-      <li>簽證需求回暖反映出境遊信心持續修復，長線目的地逐步恢復到疫情前運營節奏。</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3 class="card-title"><span class="icon">👵</span>
-      <a href="https://finance.eastmoney.com/a/202604203710522476.html" target="_blank">
-        银发族占 1/3！中国出境游强势复苏
-      </a>
-    </h3>
-    <p class="source">东方财富网 · 2026-04-29</p>
-    <ul>
-      <li>銀髮族佔出境遊申請人約三分之一，成為市場中不可忽視的核心客群，出行動機以休閒度假與文化體驗為主。</li>
-      <li>銀髮旅客偏好節奏較慢、服務較細緻的產品，對醫療保障與安全性更為敏感。</li>
-      <li>高端小團與定制遊需求增長，旅遊產品從價格競爭轉向品質與服務競爭，人均消費水平相對較高。</li>
-      <li>目的地需在產品設計、導遊服務與醫療應急方面更好匹配銀髮需求，以提升口碑與復購。</li>
-      <li>銀髮出境遊的崛起推動旅遊供給側向健康、舒適、陪伴型升級，帶動保險與醫療服務發展。</li>
-    </ul>
-  </div>
-
-  <!-- ========================= -->
-  <!-- 🏨 酒店 / OTA / 商旅 / 產業深度分析 -->
-  <!-- ========================= -->
-  <div class="category-block" id="cat-hotel">
-    <h2 class="category-title">🏨 酒店 / OTA / 商旅 / 產業深度分析</h2>
-
-    <p style="text-align:center; color:#666; margin-top:10px;">
-      本週沒有相關新聞
-    </p>
-  </div>
-
-  <hr class="section-divider">
-
-</main>
-
-<footer class="footer" style="text-align:center; padding:20px 0; color:#666;">
-  <p><a href="../about.html">About</a> · <a href="../archive.html">Archive</a> · <a href="../contact.html">Contact</a></p>
-</footer>
-
-</body>
-</html>
