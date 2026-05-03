@@ -188,5 +188,43 @@ a:hover {
   text-align: center;
   padding: 2rem;
   color: #666;
+
+
+
+
+
+.side-nav {
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px 20px;
+  width: auto; /* 自動依內容寬度 */
+  max-width: 220px; /* 避免太寬 */
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav li {
+  margin-bottom: 10px;
+}
+
+.side-nav a {
+  color: #003366;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.side-nav a:hover {
+  color: #0055aa;
+}
+
   font-size: 0.9rem;
 }
