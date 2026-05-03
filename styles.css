@@ -23,6 +23,11 @@ a:hover {
 
 /* Header */
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* 高於 side-nav */
   background: #0A1E2F; /* 深海軍藍 */
   color: #ffffff;
 }
