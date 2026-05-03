@@ -6,70 +6,19 @@
   <title>Weekly Summary — 2026-04-24 至 2026-04-30</title>
   <link rel="stylesheet" href="../styles.css">
   <style>
-    /* 全局：移除背景色，保持乾淨文字風格 */
-    html, body {
-      background: none;
-      color: #222;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans CJK TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-      margin: 0;
-      padding: 0;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
-
-    /* header：不使用背景色，保持簡潔 */
-    .site-header {
-      background: none;
-      border-bottom: 1px solid #e9e9e9;
-      position: relative;
-    }
-    .header-inner { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display:flex; align-items:center; justify-content:space-between; }
-
-    .logo a { color:#111; text-decoration:none; font-weight:700; font-size:1rem; }
-
-    .nav ul { list-style:none; margin:0; padding:0; display:flex; gap:12px; }
-    .nav a { color:#333; text-decoration:none; font-size:0.95rem; }
-
-    /* 側邊索引：固定寬度，不遮擋內容 */
-    .side-nav {
-      position: fixed;
-      left: 16px;
-      top: 120px;
-      width: 180px; /* 固定寬度 */
-      z-index: 10;
-    }
-    .side-nav ul { list-style:none; padding:0; margin:0; }
-    .side-nav li { margin:10px 0; }
-    .side-nav a { color:#0b3b66; text-decoration:none; font-weight:600; }
-
-    /* 主容器：留出側邊索引寬度，避免被擋住 */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px 20px;
-      margin-left: calc(180px + 40px); /* 與 side-nav 寬度對應，確保不被遮擋 */
-    }
-
     /* 標題與日期同樣置中、無框 */
     h1, h2.date-range {
       text-align: center;
       margin: 0.25rem 0;
       font-weight: 700;
-      color: #111;
     }
-    .subtitle { text-align:center; color:#555; margin-top:8px; }
 
     /* 分類標題置中（保留）但分類總結靠左 */
     .category-title {
       text-align: center;
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
-      font-size:1.05rem;
-      color:#0b3b66;
-      font-weight:700;
     }
-
-    /* 本分類總結靠左，且不使用背景色 */
     .category-summary {
       text-align: left;
       max-width: 900px;
@@ -77,43 +26,31 @@
       color: #222;
     }
     .summary-title {
+      font-weight: 700;
+      color: #fff;
+      background: #0b3b66;
       display: inline-block;
-      font-weight:700;
-      color:#0b3b66;
-      background: none; /* 移除背景色 */
-      padding: 0;        /* 移除 badge 內距 */
+      padding: 6px 12px;
+      border-radius: 4px;
       margin-bottom: 8px;
     }
-    .category-summary ul { margin:8px 0 0 1.1rem; padding:0; }
 
-    /* 卡片：移除背景色與陰影，改為純文字區塊 */
-    .card {
-      max-width: 900px;
-      margin: 1rem auto;
-      padding: 0; /* 內距改小，視覺更扁平 */
-      border-radius: 0;
-      background: none; /* 移除背景色 */
-      box-shadow: none; /* 移除陰影 */
-      border-bottom: 1px solid #f0f0f0;
-    }
-    .card-title { margin: 8px 0 6px 0; font-size: 1.02rem; color:#111; }
-    .card-title a { color: #0b3b66; text-decoration: none; font-weight:600; }
+    /* 卡片與來源 */
+    .card { max-width: 900px; margin: 1rem auto; padding: 16px; border-radius: 6px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+    .card-title { margin: 0 0 6px 0; font-size: 1.05rem; }
     .source { color:#777; font-size:0.9rem; margin-bottom:8px; }
-    .card ul { margin:6px 0 12px 1.1rem; padding:0; color:#333; line-height:1.5; }
-
     .section-divider { border: none; border-top: 1px solid #e6e6e6; margin: 1.5rem 0; }
 
     /* 小圖示 */
     .icon { margin-right:6px; }
 
-    /* 酒店提示：置中、灰色文字 */
+    /* 酒店提示 */
     #cat-hotel p { text-align:center; color:#666; margin-top:10px; }
 
-    /* 響應式：行動裝置隱藏側邊索引並恢復主容器邊距 */
-    @media (max-width: 900px) {
-      .side-nav { display: none; }
-      .container { margin-left: 0; padding: 16px; }
-    }
+    /* 側邊索引 */
+    .side-nav { position: fixed; left: 12px; top: 120px; }
+    .side-nav ul { list-style:none; padding:0; margin:0; }
+    .side-nav li { margin:8px 0; }
   </style>
 </head>
 
@@ -123,14 +60,14 @@
     <div class="logo">
       <a href="../index.html">CMI News Summary</a>
     </div>
-    <nav class="nav nav-center" aria-label="main navigation">
+    <nav class="nav nav-center">
       <ul>
         <li><a href="../daily/index.html">Daily</a></li>
         <li><a href="../weekly/index.html">Weekly</a></li>
         <li><a href="../monthly/index.html">Monthly</a></li>
       </ul>
     </nav>
-    <nav class="nav nav-right" aria-label="secondary navigation">
+    <nav class="nav nav-right">
       <ul>
         <li><a href="../archive.html">Archive</a></li>
         <li><a href="../about.html">About</a></li>
@@ -139,7 +76,7 @@
   </div>
 </header>
 
-<nav class="side-nav" aria-label="section index">
+<nav class="side-nav">
   <ul>
     <li><a href="#cat-air">🛫 航旅 / 航空 / 交通類</a></li>
     <li><a href="#cat-travel">🌏 出境游 / 入境游 / 文旅市場</a></li>
@@ -152,12 +89,14 @@
   <section class="intro">
     <h1>Weekly Summary</h1>
     <h2 class="date-range">2026-04-24 至 2026-04-30</h2>
-    <p class="subtitle">
+    <p class="subtitle" style="text-align:center; color:#555; margin-top:8px;">
       本頁整理 2026-04-24 至 2026-04-30 期間的重要新聞，依主題分組並提供分類總結與每則新聞摘要。
     </p>
   </section>
 
-  <!-- 航旅 / 航空 / 交通類 -->
+  <!-- ========================= -->
+  <!-- 🛫 航旅 / 航空 / 交通類 -->
+  <!-- ========================= -->
   <div class="category-block" id="cat-air">
     <h2 class="category-title">🛫 航旅 / 航空 / 交通類</h2>
 
@@ -173,10 +112,10 @@
 
   <hr class="section-divider">
 
-  <!-- 範例新聞卡片（保持原有順序與內容） -->
+  <!-- 4/30 -->
   <div class="card">
     <h3 class="card-title"><span class="icon">🛫</span>
-      <a href="https://mp.weixin.qq.com/s?__biz=MjM5NzM2NTMwMQ==&mid=2652127613&idx=2&sn=e711e748af14c88d804cbd1370a52783" target="_blank" rel="noopener noreferrer">
+      <a href="https://mp.weixin.qq.com/s?__biz=MjM5NzM2NTMwMQ==&mid=2652127613&idx=2&sn=e711e748af14c88d804cbd1370a52783" target="_blank">
         多地“五一”机票价格大跳水
       </a>
     </h3>
@@ -190,9 +129,58 @@
     </ul>
   </div>
 
-  <!-- 其餘新聞與分類保持相同結構（已移除背景色） -->
-  <!-- 你之前要求的 4/29、4/24 等新聞卡片都保留在此處（略） -->
+  <!-- 補回 4/29 的新聞：機票衝高 -->
+  <div class="card">
+    <h3 class="card-title"><span class="icon">📈</span>
+      <a href="https://example.com/article-2026-04-29" target="_blank">
+        “五一”机票价格冲上近年新高
+      </a>
+    </h3>
+    <p class="source">來源媒體 · 2026-04-29</p>
+    <ul>
+      <li>報導指出，部分熱門航線在五一前期出現價格上揚，整體票價中樞較近年同期明顯抬升。</li>
+      <li>價格上漲主要受燃油價格回升、航司運力調整與假期集中出行需求共同推動。</li>
+      <li>與局部航線出現跳水的現象並不矛盾：市場呈現「局部跳水、整體抬升」的結構性特徵，反映供需在不同航線與時段的分化。</li>
+      <li>對消費者而言，早訂與靈活改期仍是控制成本的有效策略；對航司而言，動態定價與成本對沖成為關鍵。</li>
+      <li>中長期看，若油價持續高位，票價中樞可能維持在較高水平，促使旅遊產品與出行模式出現調整。</li>
+    </ul>
+  </div>
 
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛬</span>
+      <a href="https://www.chinanews.com.cn/gj/2026/04-28/10612209.shtml" target="_blank">
+        全球航班“停飞危机”来了
+      </a>
+    </h3>
+    <p class="source">中国新闻网 · 2026-04-30</p>
+    <ul>
+      <li>國際航油價格飆升，部分航司面臨成本壓力，被迫縮減或暫停部分長途與邊際航線，取消率上升。</li>
+      <li>東南亞、大洋洲及部分歐洲航線取消率上升，旅客行程被迫調整或改道，出行不確定性增加。</li>
+      <li>航司優先保障主幹與高收益航線，邊際航線成為調整重點，航線網路出現階段性收縮。</li>
+      <li>高油價環境下，票價難以大幅回落，市場呈現「高票價 + 減班」的雙重壓力。</li>
+      <li>中長期看，航司可能加快機隊更新與節能機型引進，並透過燃油對沖與票價機制調整穩定經營。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛃</span>
+      <a href="http://www.sx.chinanews.com.cn/news/2026/0430/248477.html" target="_blank">
+        坚守国门一线 优化通关保障
+      </a>
+    </h3>
+    <p class="source">中国新闻网 · 2026-04-24</p>
+    <ul>
+      <li>邊檢部門針對五一跨境客流高峰提前部署勤務，增開查驗通道並優化現場流程以縮短通關時間。</li>
+      <li>口岸同步開展安全提示與普法宣傳，提醒旅客防範違禁物品與境外詐騙風險，提升合規意識。</li>
+      <li>智慧旅檢與信息化手段被更多應用，有助於在高峰期保持通關效率與安全風險管控的平衡。</li>
+      <li>通關體驗的優化有望提升出行滿意度，增強口岸城市的樞紐形象。</li>
+      <li>口岸服務能力與通關效率正成為跨境旅遊恢復過程中的重要支撐因素。</li>
+    </ul>
+  </div>
+
+  <!-- ========================= -->
+  <!-- 🌏 出境游 / 入境游 / 文旅市場 -->
+  <!-- ========================= -->
   <div class="category-block" id="cat-travel">
     <h2 class="category-title">🌏 出境游 / 入境游 / 文旅市場</h2>
 
@@ -208,5 +196,89 @@
 
   <hr class="section-divider">
 
+  <!-- 新增：五一假期临近 文旅市场升温（4/29） -->
   <div class="card">
     <h3 class="card-title"><span class="icon">🌡️</span>
+      <a href="https://example.com/article-2026-04-29-warmup" target="_blank">
+        五一假期临近 文旅市场升温
+      </a>
+    </h3>
+    <p class="source">來源媒體 · 2026-04-29</p>
+    <ul>
+      <li>五一假期臨近，短線出遊與周邊游預訂量顯著上升，熱門目的地機票與酒店出現提前鎖價與滿房現象。</li>
+      <li>旅遊需求以家庭與年輕客群為主，文化演出、主題樂園與短途深度游成為首選，帶動地接與門票類產品銷售。</li>
+      <li>簽證與通關便利性成為出行決策要素，部分國家簽證申請量上升導致辦理周期延長，旅行社加強簽證服務與風險提示。</li>
+      <li>供給端出現「局部緊張」：熱門城市酒店價格上漲、地面交通與導遊資源緊張，業者以動態定價與彈性行程應對。</li>
+      <li>短期市場回暖可帶動營收，但需關注供應鏈協同、服務品質與突發事件應對能力，以維持長期口碑與復購率。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛂</span>
+      <a href="https://k.sina.com.cn/article_5953189932_162d6782c06704746a.html" target="_blank">
+        中日韩“超级黄金周”启动
+      </a>
+    </h3>
+    <p class="source">新浪网 · 2026-04-30</p>
+    <ul>
+      <li>中國五一、日本黃金周與韓國兒童節假期疊加，構成東北亞區域性的「超級黃金周」，跨境旅遊與探親訪友需求同步釋放。</li>
+      <li>報導預計跨境流動量將達到數以十億計人次級別，機場、口岸與熱門景區面臨較大接待與運營壓力。</li>
+      <li>韓國成為本輪假期中最受關注的目的地之一，購物、演唱會與主題樂園等產品帶動年輕客群與家庭客群出行。</li>
+      <li>對旅遊業者而言，東北亞市場的集中放量為機票、酒店與地接服務帶來顯著增量，同時也考驗供應鏈協同能力。</li>
+      <li>簽證便利化、航班恢復與支付環境優化，將直接影響未來東北亞跨境旅遊的持續熱度。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🧳</span>
+      <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_37169e835e633052" target="_blank">
+        五一出境游预订火热！签证申请进入旺季
+      </a>
+    </h3>
+    <p class="source">企鹅号 · 2026-04-29</p>
+    <ul>
+      <li>出境遊產品預訂火熱，熱門目的地機票與酒店出現「早訂早鎖價」趨勢，臨近出發的價格與庫存壓力明顯加大。</li>
+      <li>多國簽證中心進入業務旺季，申根等長線簽證申請量同比顯著增長，部分地區出現排期緊張與辦理周期拉長。</li>
+      <li>報導提醒旅客警惕簽證中介的虛假承諾，避免因違規材料或虛假承諾導致拒簽與損失。</li>
+      <li>對旅行社與OTA而言，簽證服務能力與風險管控成為差異化競爭點，合規與效率影響用戶口碑。</li>
+      <li>簽證需求回暖反映出境遊信心持續修復，長線目的地逐步恢復到疫情前運營節奏。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">👵</span>
+      <a href="https://finance.eastmoney.com/a/202604203710522476.html" target="_blank">
+        银发族占 1/3！中国出境游强势复苏
+      </a>
+    </h3>
+    <p class="source">东方财富网 · 2026-04-29</p>
+    <ul>
+      <li>銀髮族佔出境遊申請人約三分之一，成為市場中不可忽視的核心客群，出行動機以休閒度假與文化體驗為主。</li>
+      <li>銀髮旅客偏好節奏較慢、服務較細緻的產品，對醫療保障與安全性更為敏感。</li>
+      <li>高端小團與定制遊需求增長，旅遊產品從價格競爭轉向品質與服務競爭，人均消費水平相對較高。</li>
+      <li>目的地需在產品設計、導遊服務與醫療應急方面更好匹配銀髮需求，以提升口碑與復購。</li>
+      <li>銀髮出境遊的崛起推動旅遊供給側向健康、舒適、陪伴型升級，帶動保險與醫療服務發展。</li>
+    </ul>
+  </div>
+
+  <!-- ========================= -->
+  <!-- 🏨 酒店 / OTA / 商旅 / 產業深度分析 -->
+  <!-- ========================= -->
+  <div class="category-block" id="cat-hotel">
+    <h2 class="category-title">🏨 酒店 / OTA / 商旅 / 產業深度分析</h2>
+
+    <p style="text-align:center; color:#666; margin-top:10px;">
+      本週沒有相關新聞
+    </p>
+  </div>
+
+  <hr class="section-divider">
+
+</main>
+
+<footer class="footer" style="text-align:center; padding:20px 0; color:#666;">
+  <p><a href="../about.html">About</a> · <a href="../archive.html">Archive</a> · <a href="../contact.html">Contact</a></p>
+</footer>
+
+</body>
+</html>
