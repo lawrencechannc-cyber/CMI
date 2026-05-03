@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weekly Summary — 2026-04-24 至 2026-04-30</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="../index.html">CMI News Summary</a>
+    </div>
+    <nav class="nav nav-center">
+      <ul>
+        <li><a href="../daily/index.html">Daily</a></li>
+        <li><a href="../weekly/index.html">Weekly</a></li>
+        <li><a href="../monthly/index.html">Monthly</a></li>
+      </ul>
+    </nav>
+    <nav class="nav nav-right">
+      <ul>
+        <li><a href="../archive.html">Archive</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- 左側懸浮索引 -->
+<nav class="side-nav">
+  <ul>
+    <li><a href="#cat-air">🛫 航旅 / 航空 / 交通類</a></li>
+    <li><a href="#cat-travel">🌏 出境游 / 入境游 / 文旅市場</a></li>
+    <li><a href="#cat-hotel">🏨 酒店 / OTA / 商旅 / 產業深度分析</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <section class="intro">
+    <h1>Weekly Summary — 2026-04-24 至 2026-04-30</h1>
+    <p class="subtitle">本頁面整理 2026-04-24 至 2026-04-30 所有新聞，依主題自動分組。</p>
+  </section>
+
+  <!-- ========================= -->
+  <!-- 🛫 航旅 / 航空 / 交通類 -->
+  <!-- ========================= -->
+  <div class="category-block" id="cat-air">
+    <h2 class="category-title">🛫 航旅 / 航空 / 交通類</h2>
+
+    <div class="category-summary">
+      <div class="summary-title">本分類重點</div>
+      <ul>
+        <li>五一前夕國內航線價格劇烈波動，部分航線降幅超 60%。</li>
+        <li>國際航油暴漲引發航班取消潮，旅客行程不確定性上升。</li>
+        <li>跨境旅客量增長，東北亞迎來「超級黃金周」。</li>
+        <li>多地口岸升級通關能力，應對五一高峰。</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- 4/30 -->
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛫</span>
+      <a href="https://mp.weixin.qq.com/s?__biz=MjM5NzM2NTMwMQ==&mid=2652127613&idx=2&sn=e711e748af14c88d804cbd1370a52783" target="_blank">
+        多地“五一”机票价格大跳水
+      </a>
+    </h3>
+    <p class="source">21世纪经济报道 · 2026-04-30</p>
+    <ul>
+      <li>五一前夕機票大幅跳水，部分航線降幅超 60%。</li>
+      <li>北京→麗江 350 元，北京→海口 320 元。</li>
+      <li>含稅均價突破 1000 元，仍高於去年同期。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛬</span>
+      <a href="https://www.chinanews.com.cn/gj/2026/04-28/10612209.shtml" target="_blank">
+        全球航班“停飞危机”来了
+      </a>
+    </h3>
+    <p class="source">中国新闻网 · 2026-04-30</p>
+    <ul>
+      <li>航油價格飆升至 209 美元/桶，航司成本壓力巨大。</li>
+      <li>東南亞、大洋洲、部分歐洲航線取消率高。</li>
+      <li>全球票價波動加劇，旅客行程被迫調整。</li>
+    </ul>
+  </div>
+
+  <!-- 4/24 -->
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛃</span>
+      <a href="http://www.sx.chinanews.com.cn/news/2026/0430/248477.html" target="_blank">
+        坚守国门一线 优化通关保障
+      </a>
+    </h3>
+    <p class="source">中国新闻网 · 2026-04-24</p>
+    <ul>
+      <li>山西邊檢部署五一高峰勤務，增開通道、優化流程。</li>
+      <li>同步開展普法宣傳與安全提示。</li>
+    </ul>
+  </div>
+
+  <!-- ========================= -->
+  <!-- 🌏 出境游 / 入境游 / 文旅市場 -->
+  <!-- ========================= -->
+  <div class="category-block" id="cat-travel">
+    <h2 class="category-title">🌏 出境游 / 入境游 / 文旅市場</h2>
+
+    <div class="category-summary">
+      <div class="summary-title">本分類重點</div>
+      <ul>
+        <li>跨境旅遊升溫，短線目的地最熱門。</li>
+        <li>銀髮族與高端小團需求強勁。</li>
+        <li>東北亞因三國假期疊加成最大亮點。</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- 4/30 -->
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🛂</span>
+      <a href="https://k.sina.com.cn/article_5953189932_162d6782c06704746a.html" target="_blank">
+        中日韩“超级黄金周”启动
+      </a>
+    </h3>
+    <p class="source">新浪网 · 2026-04-30</p>
+    <ul>
+      <li>中國五一、日本黃金周、韓國兒童節疊加。</li>
+      <li>跨境流動量預計達 15.2 億人次。</li>
+      <li>赴韓旅客顯著增加。</li>
+    </ul>
+  </div>
+
+  <!-- 4/29 -->
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🧳</span>
+      <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_37169e835e633052" target="_blank">
+        五一出境游预订火热！签证申请进入旺季
+      </a>
+    </h3>
+    <p class="source">企鹅号 · 2026-04-29</p>
+    <ul>
+      <li>短線與長線需求均旺。</li>
+      <li>申根簽證申請同比 +20%。</li>
+      <li>提醒旅客警惕「加急保過」詐騙。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">👵</span>
+      <a href="https://finance.eastmoney.com/a/202604203710522476.html" target="_blank">
+        银发族占 1/3！中国出境游强势复苏
+      </a>
+    </h3>
+    <p class="source">东方财富网 · 2026-04-29</p>
+    <ul>
+      <li>銀髮族佔出境遊申請人三分之一。</li>
+      <li>偏好文化游與郵輪。</li>
+      <li>高端小團需求增長。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🌐</span>
+      <a href="https://tradeinservices.mofcom.gov.cn/article/news/gnxw/202604/182478.html" target="_blank">
+        双假联动 跨境游升温
+      </a>
+    </h3>
+    <p class="source">中国服务贸易指南网 · 2026-04-29</p>
+    <ul>
+      <li>春假試點帶動跨境游提前升溫。</li>
+      <li>四小時飛行圈最熱門。</li>
+    </ul>
+  </div>
+
+  <!-- 4/25 -->
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🌸</span>
+      <a href="https://travel.sohu.com/a/1004950134_355475" target="_blank">
+        春假遇上清明 出入境游迎来双向奔赴
+      </a>
+    </h3>
+    <p class="source">搜狐网 · 2026-04-25</p>
+    <ul>
+      <li>春假 + 清明形成「春日黃金周」。</li>
+      <li>出行半徑 800 公里以上旅客增三成。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="card-title"><span class="icon">🦓</span>
+      <a href="https://news.qq.com/rain/a/20260425A074L600" target="_blank">
+        今年“五一”出境游还会有黑马吗？
+      </a>
+    </h3>
+    <p class="source">腾讯新闻 · 2026-04-25</p>
+    <ul>
+      <li>國際航班取消率升至 7.4%。</li>
+      <li>中亞與俄遠東成為「安全感黑馬」。</li>
+    </ul>
+  </div>
+
+  <!-- ========================= -->
+  <!-- 🏨 酒店 / OTA / 商旅 / 產業深度分析 -->
+  <!-- ========================= -->
+  <div class="category-block" id="cat-hotel">
+    <h2 class="category-title">🏨 酒店 / OTA / 商旅 / 產業深度分析</h2>
+
+    <div class="category-summary">
+      <div class="summary-title">本分類重點</div>
+      <ul>
+        <li>OTA 與酒店直連競爭加劇。</li>
+        <li>AI 重塑預訂與行程規劃。</li>
+        <li>商旅市場效率仍有提升空間。</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- 4/29 無酒店類新聞 -->
+  <p class="no-content">本週此分類無新聞。</p>
+
+</main>
+
+<footer class="footer">
+  <p><a href="../about.html">About</a> · <a href="../archive.html">Archive</a> · <a href="../contact.html">Contact</a></p>
+</footer>
+
+</body>
+</html>
