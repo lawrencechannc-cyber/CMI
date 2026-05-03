@@ -192,7 +192,6 @@ a:hover {
 
 
 
-
 .side-nav {
   position: fixed;
   top: 120px;
@@ -202,8 +201,9 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 16px 20px;
-  width: auto; /* 自動依內容寬度 */
-  max-width: 220px; /* 避免太寬 */
+  width: auto;
+  max-width: 220px;
+  z-index: 999; /* 讓索引永遠浮在最上層 */
 }
 
 .side-nav ul {
@@ -224,6 +224,7 @@ a:hover {
   text-decoration: none;
   transition: all 0.2s ease;
 }
+
 .side-nav a:hover {
   color: #ffffff;
   background-color: #0055aa;
@@ -232,5 +233,8 @@ a:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-
+/* 主內容區留出空間 */
+.container {
+  margin-left: 260px;
+}
 
