@@ -217,14 +217,20 @@ a:hover {
 }
 
 .side-nav a {
+  display: block;
+  padding: 8px 0;
   color: #003366;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
-
 .side-nav a:hover {
-  color: #0055aa;
+  color: #ffffff;
+  background-color: #0055aa;
+  border-radius: 6px;
+  padding-left: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-  font-size: 0.9rem;
-}
+
+
